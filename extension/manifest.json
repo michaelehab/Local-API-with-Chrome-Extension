@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Local API Communicator",
+  "version": "1.0",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["http://localhost:8000/"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
